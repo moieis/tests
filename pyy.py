@@ -9,10 +9,6 @@ from pywebio_battery import *
 
 
 
-ss = open('stl.css','r').read()
-sss= open('pal.png','rb').read()
-yu = open('yemen.png','rb').read()
-
 
 config(title='Free 🇵🇸',css_style=f'''{ss}''')
 def intro():
@@ -49,4 +45,30 @@ def intro():
 
 ''')
 
-start_server(intro,port=1232)
+
+
+
+
+
+if __name__ == '__main__':
+        import argparse
+        from pywebio.platform.tornado_http import start_server as start_http_server
+        from pywebio import start_server as start_ws_server
+        
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-p", "--port", type=int, default=8080)
+        parser.add_argument("--http", action="store_true", default=False,
+                            help='Whether to enable http protocol for communicates')
+        args = parser.parse_args()
+
+        if args.http:
+            start_http_server(
+                intro,
+                port=args.port, debug=False)
+        else:
+            # Since some cloud server may close idle connections (such as heroku),
+            # use `websocket_ping_interval` to  keep the connection alive
+            start_ws_server(
+                intro,
+                port=args.port, websocket_ping_interval=30, debug=False, cdn=True)
+
