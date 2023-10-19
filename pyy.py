@@ -31,19 +31,11 @@ def intro():
 
 
 
-               put_text(''' وَلَقَدْ كَتَبْنَا فِي الزَّبُورِ مِن بَعْدِ الذِّكْرِ أَنَّ الْأَرْضَ يَرِثُهَا عِبَادِيَ الصَّالِحُونَ''').style("font-family: 'Amiri Quran';")
+               put_text(''' وَلَقَدْ كَتَبْنَا فِي الزَّبُورِ مِن بَعْدِ الذِّكْرِ أَنَّ الْأَرْضَ يَرِثُهَا عِبَادِيَ الصَّالِحُونَ''')
 
 
 
 
-               put_html('''
-<head>
-<link href='https://fonts.googleapis.com/css?family=Amiri Quran' rel='stylesheet'>
-</head>
-
-
-
-''')
 
 
 
