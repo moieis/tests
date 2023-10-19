@@ -1,10 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
 .yemenimage {
     top: 0;
     left: 90%;
     max-width: 50%;
     position: absolute;
-    width: 120px
+    width: 10%;
 
  }
 
@@ -13,16 +15,16 @@
     left: 2%;
     max-width: 50%;
     position: absolute;
-    width: 40px
+    width: 4%
 }
 
 
  .logoimage {
     top: 0;
-    left: 47.5%;
+    left: 43%;
     max-width: 50%;
     position: absolute;
-    width: 90px
+    width: 100px
 }
 
 .footer  {
@@ -34,11 +36,16 @@
 p {
 
     top: 20.5%;
-    left: 32%;
+    left: 26%;
     max-width: 50%;
     position: absolute;
-    font-size: 23px;
-    font-weight: 560;
+    font-size: 28px;
+    font-family: 'Rakkas', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+
 
 
    }
