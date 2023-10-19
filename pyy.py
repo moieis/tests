@@ -8,7 +8,7 @@ from pywebio_battery import *
 
 
 
-
+ss = open('stl.css','r').read()
 
 config(title='Free 🇵🇸',css_style=f'''{ss}''')
 def intro():
