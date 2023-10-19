@@ -1,0 +1,30 @@
+tornado>=5.0
+user-agents
+itranslate
+# extra support
+flask
+geocoder
+django
+aiohttp
+starlette
+uvicorn[standard]
+aiofiles
+bokeh
+pandas
+cutecharts
+pyecharts
+plotly
+Pillow
+
+# test requirements
+
+
+# doc building requirements
+Jinja2==3.0.3
+sphinx==3.*
+sphinx-tabs
+sphinx-rtd-theme==0.4.*
+sphinx-toolbox==2.15.0
+sphinx-intl
+pywebio-battery
+pywebio
